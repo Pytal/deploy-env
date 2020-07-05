@@ -3,6 +3,7 @@
     "target": "es2018",  // Node.js v10
     "module": "commonjs",
     "outDir": "lib",
+    "rootDir": "src",
     "declaration": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
