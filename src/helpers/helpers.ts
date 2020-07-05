@@ -8,7 +8,7 @@ export const exec = (cmd: string): Promise<Stdout> => new Promise( (res,rej) =>
 const format = (stdout: string) => (
   stdout
     .replace( /.*\n/, '' )
-    .replace( /- Removing|- Saving/, '' )
+    .replace( /- Removing|- Saving|- Retrieving project…/, '' )
     .trim()
 )
 
