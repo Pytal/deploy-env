@@ -45,7 +45,7 @@ Deploy only the `API_KEY` environment variable to the Preview deployment
 deploy-env preview API_KEY
 ```
 
-Deploy the `API_KEY`, `SECRET`, and `GRAPHQL_ENDPOINT` environment variables to Production
+Deploy only the `API_KEY`, `SECRET`, and `GRAPHQL_ENDPOINT` environment variables to Production
 ``` bash
 deploy-env production API_KEY SECRET GRAPHQL_ENDPOINT
 ```
