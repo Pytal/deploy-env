@@ -1,0 +1,31 @@
+{
+  "name": "deploy-env",
+  "version": "0.1.0",
+  "main": "src/mod.ts",
+  "bin": {
+    "dpl-env": "src/cli.ts",
+    "deploy-env": "src/cli.ts"
+  },
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "postbuild": "node --experimental-top-level-await scripts/postbuild.mjs lib/cli.js"
+  },
+  "dependencies": {
+    "env-cmd": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.14",
+    "typescript": "^3.9.6"
+  },
+  "publishConfig": {
+    "main": "lib/mod.js",
+    "bin": {
+      "dpl-env": "lib/cli.js",
+      "deploy-env": "lib/cli.js"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": "github:Pytal/deploy-env"
+}
