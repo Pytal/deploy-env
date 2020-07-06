@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2018",  // Node.js v10
+    "lib": ["es2018"],   // https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
     "module": "commonjs",
     "outDir": "lib",
     "rootDir": "src",
