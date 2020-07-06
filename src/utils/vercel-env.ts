@@ -1,6 +1,7 @@
-import { exec, printStdoutList } from '../helpers/helpers'
+import { exec } from '../helpers/exec'
+import { printStdoutList } from '../helpers/print'
 import { getEnvVarMap } from './get-env'
-import type { DeploymentEnv, EnvVarMap, Stdout } from '../types/types'
+import type { DeploymentEnv, EnvVarMap } from '../types/types'
 
 const removeEnv = async (deploymentEnv: DeploymentEnv, envVarMap: EnvVarMap) => {
   const stdoutList: Promise<Stdout>[] = []
