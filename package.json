@@ -27,5 +27,8 @@
   "files": [
     "lib"
   ],
+  "engines": {
+    "node": ">=10"
+  },
   "repository": "github:Pytal/deploy-env"
 }
