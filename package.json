@@ -7,6 +7,7 @@
     "deploy-env": "src/cli.ts"
   },
   "scripts": {
+    "prepublishOnly": "pnpm run build",
     "build": "rm -rf lib && tsc",
     "postbuild": "node --experimental-top-level-await scripts/postbuild.mjs lib/cli.js"
   },
