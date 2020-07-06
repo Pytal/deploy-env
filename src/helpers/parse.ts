@@ -6,8 +6,8 @@ export const parseArgv = (argv: typeof process.argv) => {
     argv[2] === 'preview' ||
     argv[2] === 'development'
   ) {
-    let deploymentEnv: DeploymentEnv
-    let varNameList: string[]|null
+    let deploymentEnv: DeploymentEnv|null = null
+    let varNameList: string[]|null = null
     ;[,,deploymentEnv,...varNameList] = argv
     if (!varNameList.length) varNameList = null
 
