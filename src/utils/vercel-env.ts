@@ -4,7 +4,7 @@ import { getEnvVarMap } from './get-env'
 import type { DeploymentEnv, EnvVarMap } from '../types/types'
 
 const removeEnv = async (deploymentEnv: DeploymentEnv, envVarMap: EnvVarMap) => {
-  const stdoutList: Promise<Stdout>[] = []
+  const stdoutList: Promise<string>[] = []
   for (const varName in envVarMap) {
     stdoutList.push(
       exec( `vercel env rm ${varName} ${deploymentEnv} -y` )
@@ -15,7 +15,7 @@ const removeEnv = async (deploymentEnv: DeploymentEnv, envVarMap: EnvVarMap) => 
 }
 
 const addEnv = async (deploymentEnv: DeploymentEnv, envVarMap: EnvVarMap) => {
-  const stdoutList: Promise<Stdout>[] = []
+  const stdoutList: Promise<string>[] = []
   for (const varName in envVarMap) {
     const varValue = envVarMap[varName]
     stdoutList.push(
