@@ -4,7 +4,6 @@
     "lib": ["es2018"],   // https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
     "module": "commonjs",
     "outDir": "lib",
-    "rootDir": "src",
     "declaration": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
@@ -17,5 +16,11 @@
     "noEmitOnError": true,
     "newLine": "lf",
     "strict": true
+  },
+  "include": [
+    "src"
+  ],
+  "ts-node": {
+    "transpileOnly": true
   }
 }
