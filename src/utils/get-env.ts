@@ -1,7 +1,7 @@
 import { GetEnvVars } from 'env-cmd'
 import type { DeploymentEnv, EnvVarMap } from '../types/types'
 
-export const getEnvVarMap = async (deploymentEnv: DeploymentEnv, varNameList: string[]|null) => {
+export const getEnvVarMap = async (deploymentEnv: DeploymentEnv, varNameList?: string[]) => {
   const envVarMap: EnvVarMap = await GetEnvVars({ rc: { environments: [deploymentEnv] } })
 
   if (varNameList) {

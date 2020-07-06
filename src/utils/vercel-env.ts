@@ -26,7 +26,7 @@ const addEnv = async (deploymentEnv: DeploymentEnv, envVarMap: EnvVarMap) => {
   await printStdoutList(stdoutList)
 }
 
-export const deployEnv = async (deploymentEnv: DeploymentEnv, varNameList: string[]|null) => {
+export const deployEnv = async (deploymentEnv: DeploymentEnv, varNameList?: string[]) => {
   const envVarMap = await getEnvVarMap(deploymentEnv, varNameList)
 
   await removeEnv(deploymentEnv, envVarMap)
