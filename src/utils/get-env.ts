@@ -1,15 +1,12 @@
-import { readFile } from 'fs/promises'
 import { exists } from '../helpers/helpers'
 import { GetEnvVars } from 'env-cmd'
-import { parse } from 'dotenv'
 import type { DeploymentEnv, EnvVarMap } from '../types/types'
 
 export const getEnvVarMap = async (deploymentEnv: DeploymentEnv, varNameList?: string[]) => {
   let envVarMap: EnvVarMap
 
-  if (await exists(`.env.${deploymentEnv}`)) {
-    const dotenv = await readFile( `.env.${deploymentEnv}`, 'utf-8' )
-    envVarMap = parse(dotenv)
+  if (await exists(`.env.${deploymentEnv}`) || await exists('.env')) {
+    envVarMap = await GetEnvVars({ envFile: { filePath: `.env.${deploymentEnv}`, fallback: true } })
   }
   else {
     envVarMap = await GetEnvVars({ rc: { environments: [deploymentEnv] } })

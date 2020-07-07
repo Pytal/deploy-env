@@ -14,7 +14,6 @@
     "terse": "ts-node scripts/terse.ts lib/"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
     "env-cmd": "^10.1.0"
   },
   "devDependencies": {
