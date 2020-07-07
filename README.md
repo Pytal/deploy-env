@@ -27,6 +27,7 @@ Make an `.env-cmdrc.json` file with the following format:
   }
 }
 ```
+> Note: The `dotenv` files: `.env.production`, `.env.preview`, and `.env.development` are also supported
 
 Run the command:
 ``` bash

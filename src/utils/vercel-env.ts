@@ -1,4 +1,4 @@
-import { exec } from '../helpers/exec'
+import { exec } from '../helpers/helpers'
 import { printStdoutList } from '../helpers/print'
 import { getEnvVarMap } from './get-env'
 import type { DeploymentEnv, EnvVarMap } from '../types/types'
