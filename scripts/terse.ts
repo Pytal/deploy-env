@@ -22,7 +22,6 @@ const terse = async (path: string) => {
   else await terseDir(path)
 }
 
-
 // CLI
 const [,,path] = process.argv
 terse(path)

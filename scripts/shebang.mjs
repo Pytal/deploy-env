@@ -1,7 +1,8 @@
 import { readFile, writeFile } from 'fs/promises'
 
-const [,,filename] = process.argv
-const shebang = '#!/usr/bin/env node\n'
+const [,,file] = process.argv
 
-const contents = await readFile( filename, 'utf-8' )
-await writeFile( filename, shebang + contents )
+const shebang = '#!/usr/bin/env node\n'
+const contents = await readFile( file, 'utf-8' )
+
+await writeFile( file, shebang + contents )
