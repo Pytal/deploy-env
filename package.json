@@ -1,6 +1,6 @@
 {
   "name": "deploy-env",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "src/mod.ts",
   "bin": {
     "dpl-env": "src/cli.ts",
