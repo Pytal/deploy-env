@@ -20,6 +20,7 @@ jobs:
       - run: npm add -g pnpm
       - run: pnpm i
       - run: git remote set-branches --add origin master
+      - run: git checkout master
       - run: git fetch
       - run: pnpm publish
         env:
