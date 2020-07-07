@@ -17,11 +17,9 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+      - run: git branch -f master origin/master
       - run: npm add -g pnpm
       - run: pnpm i
-      - run: git remote set-branches --add origin master
-      - run: git checkout master
-      - run: git fetch
       - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
