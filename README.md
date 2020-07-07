@@ -18,7 +18,7 @@ API_KEY=top_secret_api_key
 ...
 ```
 
-You can also make an `.env-cmdrc.json` file with the following format:
+You can also make a `.env-cmdrc.json` file with the following format:
 ``` jsonc
 {
   "development": {
@@ -73,6 +73,6 @@ A function which deploys environment variables from `.env` and `.env-cmdrc.json`
 
 
 ## Related Projects
-[`env-cmd`](https://github.com/toddbluhm/env-cmd) - a simple node program for executing commands using an environment from an env file
+[`env-cmd`](https://github.com/toddbluhm/env-cmd) - simple node program for executing commands using an environment from an env file
 
-[`dotenv`](https://github.com/motdotla/dotenv) - a module that loads environment variables from a `.env` file into [`process.env`](https://nodejs.org/docs/latest/api/process.html#process_process_env)
+[`dotenv`](https://github.com/motdotla/dotenv) - module that loads environment variables from a `.env` file into [`process.env`](https://nodejs.org/docs/latest/api/process.html#process_process_env)
