@@ -60,3 +60,9 @@ Deploy only the `API_KEY`, `SECRET`, and `GRAPHQL_ENDPOINT` environment variable
 ``` bash
 deploy-env production API_KEY SECRET GRAPHQL_ENDPOINT
 ```
+
+
+## Related Projects
+[`env-cmd`](https://github.com/toddbluhm/env-cmd) - a simple node program for executing commands using an environment from an env file
+
+[`dotenv`](https://github.com/motdotla/dotenv) - a module that loads environment variables from a `.env` file into [`process.env`](https://nodejs.org/docs/latest/api/process.html#process_process_env)
