@@ -1,5 +1,5 @@
 # deploy-env
-A CLI tool for deploying environment variables from an `.env-cmdrc.json` file to Vercel
+Deploy environment variables from `.env` and `.env-cmdrc.json` files to Vercel
 
 ## Installation
 ``` bash
@@ -10,30 +10,35 @@ npm add -g deploy-env
 ## Usage
 In your Vercel project directory:
 
-Make an `.env-cmdrc.json` file with the following format:
+Make at least one `.env.production`, `.env.preview`, or `.env.development` file with your environment variables in the following format:
+``` env
+API_KEY=top_secret_api_key
+...
+```
+
+You can also make an `.env-cmdrc.json` file with the following format:
 ``` jsonc
 {
   "development": {
     "API_KEY": "development value"
-    // development environment variables here
+    // development environment variables
   },
   "preview": {
     "API_KEY": "preview value"
-    // preview environment variables here
+    // preview environment variables
   },
   "production": {
     "API_KEY": "production value"
-    // production environment variables here
+    // production environment variables
   }
 }
 ```
-> Note: The `dotenv` files: `.env.production`, `.env.preview`, and `.env.development` are also supported
 
 Run the command:
 ``` bash
 deploy-env [production|preview|development] [ENV_VAR]...
 ```
-> You can also use `dpl-env` as an alias for `deploy-env`
+> Note: You can use `dpl-env` as an alias for `deploy-env`
 
 ## Examples
 Deploy all `preview` environment variables to the Preview deployment
