@@ -62,6 +62,16 @@ deploy-env production API_KEY SECRET GRAPHQL_ENDPOINT
 ```
 
 
+## Programmatic API
+
+### `deployEnv`
+A function which deploys environment variables from `.env` and `.env-cmdrc.json` files:
+
+- `deploymentEnv` { `'production'|'preview'|'development'` }: Deployment environment to be deployed to
+- `varNameList` { `string[]` }: (optional) List of environment variables to be deployed
+- **Returns** { `Promise<void>` }: Promise which resolves when  deployment completes
+
+
 ## Related Projects
 [`env-cmd`](https://github.com/toddbluhm/env-cmd) - a simple node program for executing commands using an environment from an env file
 
