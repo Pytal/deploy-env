@@ -19,6 +19,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm add -g pnpm
       - run: pnpm i
+      - run: git remote set-branches --add origin master
       - run: git fetch
       - run: pnpm publish
         env:
