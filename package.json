@@ -1,10 +1,10 @@
 {
   "name": "deploy-env",
-  "version": "1.0.3",
-  "main": "src/mod.ts",
+  "version": "1.0.4",
+  "main": "lib/mod.js",
   "bin": {
-    "dpl-env": "src/cli.ts",
-    "deploy-env": "src/cli.ts"
+    "dpl-env": "lib/cli.js",
+    "deploy-env": "lib/cli.js"
   },
   "scripts": {
     "prepublishOnly": "pnpm run build",
@@ -21,13 +21,6 @@
     "terser": "^4.8.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.6"
-  },
-  "publishConfig": {
-    "main": "lib/mod.js",
-    "bin": {
-      "dpl-env": "lib/cli.js",
-      "deploy-env": "lib/cli.js"
-    }
   },
   "files": [
     "lib"
