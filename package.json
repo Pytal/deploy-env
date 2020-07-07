@@ -9,13 +9,17 @@
   "scripts": {
     "prepublishOnly": "pnpm run build",
     "build": "rm -rf lib && tsc",
-    "postbuild": "node --experimental-top-level-await scripts/postbuild.mjs lib/cli.js"
+    "postbuild": "pnpm run shebang && pnpm run terse",
+    "shebang": "node --experimental-top-level-await scripts/shebang.mjs lib/cli.js",
+    "terse": "ts-node scripts/terse.ts lib/"
   },
   "dependencies": {
     "env-cmd": "^10.1.0"
   },
   "devDependencies": {
-    "@types/node": "^14.0.14",
+    "@types/node": "^14.0.18",
+    "terser": "^4.8.0",
+    "ts-node": "^8.10.2",
     "typescript": "^3.9.6"
   },
   "publishConfig": {
