@@ -18,10 +18,10 @@
     "p-limit": "^3.0.1"
   },
   "devDependencies": {
-    "@types/node": "^14.0.19",
-    "terser": "^4.8.0",
-    "ts-node": "^8.10.2",
-    "typescript": "^3.9.6"
+    "@types/node": "14.0.20",
+    "terser": "4.8.0",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.6"
   },
   "peerDependencies": {
     "vercel": "^19.0.0"
