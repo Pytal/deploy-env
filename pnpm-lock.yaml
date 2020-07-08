@@ -1,5 +1,6 @@
 dependencies:
   env-cmd: 10.1.0
+  p-limit: 3.0.1
 devDependencies:
   '@types/node': 14.0.19
   terser: 4.8.0
@@ -63,6 +64,20 @@ packages:
     dev: true
     resolution:
       integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==
+  /p-limit/3.0.1:
+    dependencies:
+      p-try: 2.2.0
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-mw/p92EyOzl2MhauKodw54Rx5ZK4624rNfgNaBguFZkHzyUG9WsDzFF5/yQVEJinbJDdP4jEfMN+uBquiGnaLg==
+  /p-try/2.2.0:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
   /path-key/3.1.1:
     dev: false
     engines:
@@ -148,6 +163,7 @@ packages:
 specifiers:
   '@types/node': ^14.0.19
   env-cmd: ^10.1.0
+  p-limit: ^3.0.1
   terser: ^4.8.0
   ts-node: ^8.10.2
   typescript: ^3.9.6
