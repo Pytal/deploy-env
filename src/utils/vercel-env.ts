@@ -1,4 +1,4 @@
-import { exec } from '../helpers/helpers'
+import { exec, limit } from '../helpers/helpers'
 import { printStdout } from '../helpers/print'
 import { getEnvVarMap } from './get-env'
 import type { DeploymentEnv, EnvVarMap } from '../types/types'
@@ -7,7 +7,7 @@ const removeEnv = async (deploymentEnv: DeploymentEnv, envVarMap: EnvVarMap) => 
   const stdoutList: Promise<void>[] = []
   for (const varName in envVarMap) {
     stdoutList.push(
-      exec( `vercel env rm ${varName} ${deploymentEnv} -y` ).then(printStdout)
+      limit(() => exec( `vercel env rm ${varName} ${deploymentEnv} -y` ).then(printStdout))
     )
   }
 
@@ -19,7 +19,7 @@ const addEnv = async (deploymentEnv: DeploymentEnv, envVarMap: EnvVarMap) => {
   for (const varName in envVarMap) {
     const varValue = envVarMap[varName]
     stdoutList.push(
-      exec( `echo -n ${varValue} | vercel env add ${varName} ${deploymentEnv}` ).then(printStdout)
+      limit(() => exec( `echo -n ${varValue} | vercel env add ${varName} ${deploymentEnv}` ).then(printStdout))
     )
   }
 

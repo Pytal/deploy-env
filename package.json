@@ -14,7 +14,8 @@
     "terse": "ts-node scripts/terse.ts lib/"
   },
   "dependencies": {
-    "env-cmd": "^10.1.0"
+    "env-cmd": "^10.1.0",
+    "p-limit": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "^14.0.19",
