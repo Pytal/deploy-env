@@ -1,29 +1,29 @@
 import { exec } from '../helpers/helpers'
-import { printStdoutList } from '../helpers/print'
+import { printStdout } from '../helpers/print'
 import { getEnvVarMap } from './get-env'
 import type { DeploymentEnv, EnvVarMap } from '../types/types'
 
 const removeEnv = async (deploymentEnv: DeploymentEnv, envVarMap: EnvVarMap) => {
-  const stdoutList: Promise<string>[] = []
+  const stdoutList: Promise<void>[] = []
   for (const varName in envVarMap) {
     stdoutList.push(
-      exec( `vercel env rm ${varName} ${deploymentEnv} -y` )
+      exec( `vercel env rm ${varName} ${deploymentEnv} -y` ).then(printStdout)
     )
   }
 
-  await printStdoutList(stdoutList)
+  await Promise.all(stdoutList)
 }
 
 const addEnv = async (deploymentEnv: DeploymentEnv, envVarMap: EnvVarMap) => {
-  const stdoutList: Promise<string>[] = []
+  const stdoutList: Promise<void>[] = []
   for (const varName in envVarMap) {
     const varValue = envVarMap[varName]
     stdoutList.push(
-      exec( `echo -n ${varValue} | vercel env add ${varName} ${deploymentEnv}` )
+      exec( `echo -n ${varValue} | vercel env add ${varName} ${deploymentEnv}` ).then(printStdout)
     )
   }
 
-  await printStdoutList(stdoutList)
+  await Promise.all(stdoutList)
 }
 
 export const deployEnv = async (deploymentEnv: DeploymentEnv, varNameList?: string[]) => {
