@@ -1,6 +1,7 @@
-import { access } from 'fs/promises'
+import { promises as fs } from 'fs'
 import { exec as execCallback } from 'child_process'
 import pLimit = require('p-limit')
+const { access } = fs
 
 export const exists = (path: string) => access(path).then(_ => true).catch(_ => false)
 
