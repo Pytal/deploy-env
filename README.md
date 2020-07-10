@@ -1,4 +1,5 @@
 # deploy-env
+![](https://github.com/Pytal/deploy-env/workflows/Publish%20%20to%20npm/badge.svg)
 Deploy environment variables from `.env` and `.env-cmdrc.json` files to Vercel
 
 
