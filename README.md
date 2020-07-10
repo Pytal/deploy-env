@@ -38,11 +38,11 @@ You can also make a `.env-cmdrc.json` file with the following format:
 
 Run the command:
 ``` bash
-deploy-env [production|preview|development] [ENV_VAR]...
+deploy-env [production | preview | development] [ENV_VAR]...
 ```
 > Note: You can use `dpl-env` as an alias for `deploy-env`
 
-> If a `.env.[environment]` file doesn't exist when running: `deploy-env [environment]`, the `.env` file will be used as a fallback and deployed to the environment specified in the command
+> If a `.env.[environment]` file doesn't exist when running: `deploy-env [environment]`, the `.env` file will be used and deployed to the environment specified in the command
 
 
 ## Examples
@@ -67,7 +67,7 @@ deploy-env production API_KEY SECRET GRAPHQL_ENDPOINT
 ### `deployEnv`
 A function which deploys environment variables from `.env` and `.env-cmdrc.json` files:
 
-- `deploymentEnv` { `'production'|'preview'|'development'` }: Deployment environment to be deployed to
+- `deploymentEnv` { `'production' | 'preview' | 'development'` }: Deployment environment to be deployed to
 - `varNameList` { `string[]` }: (optional) List of environment variables to be deployed
 - **Returns** { `Promise<void>` }: Promise which resolves when  deployment completes
 
