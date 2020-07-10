@@ -14,7 +14,7 @@ export const parseArgv = (argv: typeof process.argv) => {
     return { deploymentEnv, varNameList }
   }
   else {
-    console.log( 'Usage: deploy-env [production|preview|development] [ENV_VAR]...' )
+    console.log( 'Usage: deploy-env [production | preview | development] [ENV_VAR]...' )
     process.exit(9)
   }
 }
