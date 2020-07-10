@@ -1,4 +1,7 @@
 # deploy-env
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Pytal/deploy-env/Publish%20to%20npm?label=CI&style=for-the-badge)
+![npm](https://img.shields.io/npm/v/deploy-env?style=for-the-badge)
+
 Deploy environment variables from `.env` and `.env-cmdrc.json` files to Vercel
 
 
