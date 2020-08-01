@@ -18,7 +18,7 @@
     "p-limit": "^3.0.2"
   },
   "devDependencies": {
-    "@types/node": "^14.0.23",
+    "@types/node": "^14.0.26",
     "terser": "^4.8.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
