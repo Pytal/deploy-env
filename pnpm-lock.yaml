@@ -4,8 +4,8 @@ dependencies:
 devDependencies:
   '@types/node': 14.0.23
   terser: 5.0.0
-  ts-node: 8.10.2_typescript@3.9.7
-  typescript: 3.9.7
+  ts-node: 8.10.2_typescript@4.0.2
+  typescript: 4.0.2
 lockfileVersion: 5.1
 packages:
   /@types/node/14.0.23:
@@ -122,13 +122,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-olH2DwGINoSuEpSGd+BsPuAQaA3OrHnHnFL/rDB2TVNc3srUbz/rq/j2BlF4zDXI+JqAvGr86bIm1R2cJgZ3FA==
-  /ts-node/8.10.2_typescript@3.9.7:
+  /ts-node/8.10.2_typescript@4.0.2:
     dependencies:
       arg: 4.1.3
       diff: 4.0.2
       make-error: 1.3.6
       source-map-support: 0.5.19
-      typescript: 3.9.7
+      typescript: 4.0.2
       yn: 3.1.1
     dev: true
     engines:
@@ -138,13 +138,13 @@ packages:
       typescript: '>=2.7'
     resolution:
       integrity: sha512-ISJJGgkIpDdBhWVu3jufsWpK3Rzo7bdiIXJjQc0ynKxVOVcg2oIrf2H2cejminGrptVc6q6/uynAHNCuWGbpVA==
-  /typescript/3.9.7:
+  /typescript/4.0.2:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+      integrity: sha512-e4ERvRV2wb+rRZ/IQeb3jm2VxBsirQLpQhdxplZ2MEzGvDkkMmPglecnNDfSUBivMjP93vRbngYYDQqQ/78bcQ==
   /which/2.0.2:
     dependencies:
       isexe: 2.0.0
@@ -166,4 +166,4 @@ specifiers:
   p-limit: ^3.0.2
   terser: ^5.0.0
   ts-node: ^8.10.2
-  typescript: ^3.9.7
+  typescript: ^4.0.0
