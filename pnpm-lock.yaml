@@ -4,7 +4,7 @@ dependencies:
 devDependencies:
   '@types/node': 14.0.23
   terser: 5.0.0
-  ts-node: 8.10.2_typescript@3.9.7
+  ts-node: 9.0.0_typescript@3.9.7
   typescript: 3.9.7
 lockfileVersion: 5.1
 packages:
@@ -122,7 +122,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-olH2DwGINoSuEpSGd+BsPuAQaA3OrHnHnFL/rDB2TVNc3srUbz/rq/j2BlF4zDXI+JqAvGr86bIm1R2cJgZ3FA==
-  /ts-node/8.10.2_typescript@3.9.7:
+  /ts-node/9.0.0_typescript@3.9.7:
     dependencies:
       arg: 4.1.3
       diff: 4.0.2
@@ -132,12 +132,12 @@ packages:
       yn: 3.1.1
     dev: true
     engines:
-      node: '>=6.0.0'
+      node: '>=10.0.0'
     hasBin: true
     peerDependencies:
       typescript: '>=2.7'
     resolution:
-      integrity: sha512-ISJJGgkIpDdBhWVu3jufsWpK3Rzo7bdiIXJjQc0ynKxVOVcg2oIrf2H2cejminGrptVc6q6/uynAHNCuWGbpVA==
+      integrity: sha512-/TqB4SnererCDR/vb4S/QvSZvzQMJN8daAslg7MeaiHvD8rDZsSfXmNeNumyZZzMned72Xoq/isQljYSt8Ynfg==
   /typescript/3.9.7:
     dev: true
     engines:
@@ -165,5 +165,5 @@ specifiers:
   env-cmd: ^10.1.0
   p-limit: ^3.0.2
   terser: ^5.0.0
-  ts-node: ^8.10.2
+  ts-node: ^9.0.0
   typescript: ^3.9.7
