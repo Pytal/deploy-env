@@ -10,8 +10,8 @@ const terseDir = async (dir: string) => {
 
 const terseFile = async (file: string) => {
   if (extname(file) === '.js') {
-    const result = minify( await readFile( file, 'utf-8' ) )
-    if (result.code) await writeFile( file, result.code )
+    const { code } = await minify( await readFile( file, 'utf-8' ) )
+    if (code) await writeFile( file, code )
   }
 }
 
