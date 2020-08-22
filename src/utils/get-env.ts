@@ -5,7 +5,7 @@ import type { DeploymentEnv, EnvVarMap } from '../types/types'
 export const getEnvVarMap = async (deploymentEnv: DeploymentEnv, varNameList?: string[]) => {
   let envVarMap: EnvVarMap
 
-  if (await exists(`.env.${deploymentEnv}`) || await exists('.env')) {
+  if (await exists(`.env.${deploymentEnv}`) ?? await exists('.env')) {
     envVarMap = await GetEnvVars({ envFile: { filePath: `.env.${deploymentEnv}`, fallback: true } })
   }
   else {
