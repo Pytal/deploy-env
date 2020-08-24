@@ -24,7 +24,7 @@
     "typescript": "^4.0.2"
   },
   "peerDependencies": {
-    "vercel": "^19.0.0"
+    "vercel": "^20.0.0"
   },
   "files": [
     "lib"
