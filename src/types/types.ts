@@ -1,2 +1,3 @@
 export type DeploymentEnv = 'production' | 'preview' | 'development'
-export interface EnvVarMap { [key:string]: string }
+export type Argv = [DeploymentEnv,...string[]]
+export type EnvVarMap = Record<string, string>

@@ -1,4 +1,4 @@
-import type { DeploymentEnv } from '../types/types'
+import type { Argv } from '../types/types'
 
 export const parseArgv = (argv: typeof process.argv) => {
   if (
@@ -6,12 +6,9 @@ export const parseArgv = (argv: typeof process.argv) => {
     argv[2] === 'preview' ||
     argv[2] === 'development'
   ) {
-    let deploymentEnv: DeploymentEnv
-    let varNameList: string[]|null
-    ;[,,deploymentEnv,...varNameList] = argv
-    if (!varNameList.length) varNameList = null
+    const [deploymentEnv,...varNameList]: Argv = [argv[2],...argv.slice(3)]
 
-    return { deploymentEnv, varNameList }
+    return { deploymentEnv, varNameList: varNameList.length ? varNameList : null }
   }
   else {
     console.log( 'Usage: deploy-env [production | preview | development] [ENV_VAR]...' )
