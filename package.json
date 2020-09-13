@@ -7,7 +7,7 @@
     "deploy-env": "lib/cli.js"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --silent",
     "prepublishOnly": "pnpm run build",
     "build": "rm -rf lib && tsc",
     "postbuild": "pnpm run shebang && pnpm run terse",
