@@ -10,8 +10,8 @@
     "prepublishOnly": "pnpm run build",
     "build": "rm -rf lib && tsc",
     "postbuild": "pnpm run shebang && pnpm run terse",
-    "shebang": "node --experimental-top-level-await scripts/shebang.mjs lib/cli.js",
-    "terse": "ts-node scripts/terse.ts lib/"
+    "shebang": "node scripts/shebang.mjs lib/cli.js",
+    "terse": "sucrase-node scripts/terse.ts lib/"
   },
   "dependencies": {
     "env-cmd": "^10.1.0",
