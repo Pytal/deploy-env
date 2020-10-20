@@ -1,4 +1,4 @@
-import { parseArgv } from '../../src/helpers/parse'
+import { parseArgv } from './parse'
 
 
 test( 'deploymentEnv arg is parsed into same deploymentEnv string', () => {
