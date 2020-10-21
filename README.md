@@ -2,7 +2,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Pytal/deploy-env/Publish?label=CI&style=for-the-badge)](https://github.com/Pytal/deploy-env/actions)
 [![npm](https://img.shields.io/npm/v/deploy-env?style=for-the-badge)](https://www.npmjs.com/package/deploy-env)
 
-Deploy environment variables from `.env` and `.env-cmdrc.json` files to Vercel
+Deploy environment variables from `.env` and `.env-cmdrc.json` files to Vercel.
 
 
 ## Installation
@@ -18,6 +18,7 @@ In your Vercel project directory:
 Make at least one `.env`, `.env.production`, `.env.preview`, or `.env.development` file with your environment variables in the following format:
 ``` env
 API_KEY=top_secret_api_key
+TOKEN=some_secret_token
 ...
 ```
 
@@ -59,9 +60,9 @@ Deploy only the `API_KEY` environment variable to the Preview deployment
 deploy-env preview API_KEY
 ```
 
-Deploy only the `API_KEY`, `SECRET`, and `GRAPHQL_ENDPOINT` environment variables to Production
+Deploy only the `API_KEY`, `TOKEN`, and `GRAPHQL_ENDPOINT` environment variables to Production
 ``` bash
-deploy-env production API_KEY SECRET GRAPHQL_ENDPOINT
+deploy-env production API_KEY TOKEN GRAPHQL_ENDPOINT
 ```
 
 
