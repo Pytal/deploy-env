@@ -36,5 +36,6 @@
   "engines": {
     "node": ">=10"
   },
-  "repository": "github:Pytal/deploy-env"
+  "repository": "github:Pytal/deploy-env",
+  "license": "MIT"
 }
