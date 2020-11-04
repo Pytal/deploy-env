@@ -1,26 +1,34 @@
 name: Publish
 
 on:
-  release:
-    types:
-      - published
+  push:
+    branches:
+      - main
 
 jobs:
   publish:
+    if: startsWith(github.event.head_commit.message, 'v')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 15
           registry-url: https://registry.npmjs.org
       - name: Setup pnpm
         run: npm add -g pnpm
       - name: Install dependencies
-        run: pnpm i
+        run: pnpm install
       - name: Test
-        run: pnpm t
+        run: pnpm test
       - name: Publish
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          tag_name: ${{ github.event.head_commit.message }}
+          release_name: ${{ github.event.head_commit.message }}
