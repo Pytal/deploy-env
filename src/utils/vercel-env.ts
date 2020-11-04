@@ -19,7 +19,7 @@ const addEnv = async (deploymentEnv: DeploymentEnv, envVarMap: EnvVarMap) => {
   for (const varName in envVarMap) {
     const varValue = envVarMap[varName]
     stdoutList.push(
-      limit(() => exec( `printf %s ${varValue} | vercel env add ${varName} ${deploymentEnv}` ).then(printStdout))
+      limit(() => exec( `printf %s "${varValue}" | vercel env add ${varName} ${deploymentEnv}` ).then(printStdout))
     )
   }
 
