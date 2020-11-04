@@ -2,7 +2,7 @@ import { parseArgv } from './parse'
 
 
 test( 'deploymentEnv arg is parsed into same deploymentEnv string', () => {
-  const argv = [,,'production']
+  const argv = ['','','production']
 
   expect(parseArgv(argv)).toMatchObject({
     deploymentEnv: 'production'
@@ -11,7 +11,7 @@ test( 'deploymentEnv arg is parsed into same deploymentEnv string', () => {
 
 
 test( 'No ENV_VAR arg is parsed as null', () => {
-  const argv = [,,'production']
+  const argv = ['','','production']
 
   expect(parseArgv(argv)).toMatchObject({
     varNameList: null
@@ -20,7 +20,7 @@ test( 'No ENV_VAR arg is parsed as null', () => {
 
 
 test( 'Single ENV_VAR arg is parsed into [string]', () => {
-  const argv = [,,'production','API_KEY']
+  const argv = ['','','production','API_KEY']
 
   expect(parseArgv(argv)).toMatchObject({
     varNameList: ['API_KEY']
@@ -29,7 +29,7 @@ test( 'Single ENV_VAR arg is parsed into [string]', () => {
 
 
 test( 'Multiple ENV_VAR args are parsed into string[]', () => {
-  const argv = [,,'production','API_KEY','SECRET','GRAPHQL_ENDPOINT']
+  const argv = ['','','production','API_KEY','SECRET','GRAPHQL_ENDPOINT']
 
   expect(parseArgv(argv)).toMatchObject({
     varNameList: ['API_KEY','SECRET','GRAPHQL_ENDPOINT']
@@ -38,7 +38,7 @@ test( 'Multiple ENV_VAR args are parsed into string[]', () => {
 
 
 test( 'Invalid arg shoud print help message to stdout', () => {
-  const argv = [,,'basilisk']
+  const argv = ['','','basilisk']
 
   jest.spyOn(console, 'log')
   // handle process.exit so test doesn't error
@@ -52,7 +52,7 @@ test( 'Invalid arg shoud print help message to stdout', () => {
 
 
 test( 'Invalid arg should exit process with code 9', () => {
-  const argv = [,,'basilisk']
+  const argv = ['','','basilisk']
 
   parseArgv(argv)
 
