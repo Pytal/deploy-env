@@ -3,6 +3,10 @@
 
 ## Unreleased
 
+## 1.1.6
+## Fixes
+- Preserve whitespace in environment variables
+
 ## 1.1.5
 ## Fixes
 - Fix `.env` fallback
