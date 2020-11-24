@@ -3,6 +3,10 @@
 
 ## Unreleased
 
+## 2.0.1
+### Fixes
+- 🔥 Hotfix
+
 ## 2.0.0
 ### Breaking
 - Update minimum supported version of Vercel CLI to v21
