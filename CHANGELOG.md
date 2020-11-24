@@ -2,6 +2,8 @@
 > This project adheres to [SemVer](https://semver.org).
 
 ## Unreleased
+
+## 2.0.0
 ### Breaking
 - Update minimum supported version of Vercel CLI to v21
 

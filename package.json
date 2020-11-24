@@ -1,7 +1,7 @@
 {
   "name": "deploy-env",
   "description": "Deploy environment variables from .env and .env-cmdrc.json files to Vercel",
-  "version": "1.1.6",
+  "version": "2.0.0",
   "main": "lib/mod.js",
   "bin": {
     "dpl-env": "lib/cli.js",
