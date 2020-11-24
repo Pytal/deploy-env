@@ -4,11 +4,11 @@ dependencies:
 devDependencies:
   '@sucrase/jest-plugin': 2.0.0
   '@types/jest': 26.0.15
-  '@types/node': 14.14.6
+  '@types/node': 14.14.9
   jest: 26.6.3
   sucrase: 3.16.0
-  terser: 5.3.8
-  typescript: 4.0.5
+  terser: 5.5.0
+  typescript: 4.1.2
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.10.4:
@@ -594,6 +594,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-6QlRuqsQ/Ox/aJEQWBEJG7A9+u7oSYl3mem/K8IzxXG/kAGbV1YPD9Bg9Zw3vyxC/YP+zONKwy8hGkSt1jxFMw==
+  /@types/node/14.14.9:
+    dev: true
+    resolution:
+      integrity: sha512-JsoLXFppG62tWTklIoO4knA+oDTYsmqWxHRvd4lpmfQRNhX6osheUOWETP2jMoV/2bEHuMra8Pp3Dmo/stBFcw==
   /@types/normalize-package-data/2.4.0:
     dev: true
     resolution:
@@ -3566,7 +3570,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-un0FmiRUQNr5PJqy9kP7c40F5BOfpGlYTrxonDChEZB7pzZxRNp/bt+ymiy9/npwXya9KH99nJ/GXFIiUkYGFQ==
-  /terser/5.3.8:
+  /terser/5.5.0:
     dependencies:
       commander: 2.20.3
       source-map: 0.7.3
@@ -3576,7 +3580,7 @@ packages:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-zVotuHoIfnYjtlurOouTazciEfL7V38QMAOhGqpXDEg6yT13cF4+fEP9b0rrCEQTn+tT46uxgFsTZzhygk+CzQ==
+      integrity: sha512-eopt1Gf7/AQyPhpygdKePTzaet31TvQxXvrf7xYUvD/d8qkCJm4SKPDzu+GHK5ZaYTn8rvttfqaZc3swK21e5g==
   /test-exclude/6.0.0:
     dependencies:
       '@istanbuljs/schema': 0.1.2
@@ -3730,13 +3734,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
-  /typescript/4.0.5:
+  /typescript/4.1.2:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-ywmr/VrTVCmNTJ6iV2LwIrfG1P+lv6luD8sUJs+2eI9NLGigaN+nUQc13iHqisq7bra9lnmUSYqbJvegraBOPQ==
+      integrity: sha512-thGloWsGH3SOxv1SoY7QojKi0tc+8FnOmiarEGMbd/lar7QOEd3hvlx3Fp5y6FlDUGl9L+pd4n2e+oToGMmhRQ==
   /union-value/1.0.1:
     dependencies:
       arr-union: 3.1.0
@@ -3968,10 +3972,10 @@ packages:
 specifiers:
   '@sucrase/jest-plugin': ^2.0.0
   '@types/jest': ^26.0.15
-  '@types/node': ^14.14.6
+  '@types/node': ^14.14.9
   env-cmd: ^10.1.0
   jest: ^26.6.3
   p-limit: ^3.0.2
   sucrase: ^3.16.0
-  terser: ^5.3.8
-  typescript: ^4.0.5
+  terser: ^5.5.0
+  typescript: ^4.1.2
