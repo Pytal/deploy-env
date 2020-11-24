@@ -6,9 +6,9 @@ export const parseArgv = (argv: typeof process.argv) => {
     argv[2] === 'preview' ||
     argv[2] === 'development'
   ) {
-    const [deploymentEnv,...varNameList]: Argv = [argv[2],...argv.slice(3)]
+    const [deploymentEnv,...varNameArr]: Argv = [argv[2],...argv.slice(3)]
 
-    return { deploymentEnv, varNameList: varNameList.length ? varNameList : null }
+    return { deploymentEnv, varNameArr: varNameArr.length ? varNameArr : null }
   }
   else {
     console.log( 'Usage: deploy-env [production | preview | development] [ENV_VAR]...' )
