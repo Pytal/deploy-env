@@ -14,7 +14,7 @@ test( 'No ENV_VAR arg is parsed as null', () => {
   const argv = ['','','production']
 
   expect(parseArgv(argv)).toMatchObject({
-    varNameList: null
+    varNameArr: null
   })
 })
 
@@ -23,7 +23,7 @@ test( 'Single ENV_VAR arg is parsed into [string]', () => {
   const argv = ['','','production','API_KEY']
 
   expect(parseArgv(argv)).toMatchObject({
-    varNameList: ['API_KEY']
+    varNameArr: ['API_KEY']
   })
 })
 
@@ -32,7 +32,7 @@ test( 'Multiple ENV_VAR args are parsed into string[]', () => {
   const argv = ['','','production','API_KEY','SECRET','GRAPHQL_ENDPOINT']
 
   expect(parseArgv(argv)).toMatchObject({
-    varNameList: ['API_KEY','SECRET','GRAPHQL_ENDPOINT']
+    varNameArr: ['API_KEY','SECRET','GRAPHQL_ENDPOINT']
   })
 })
 
