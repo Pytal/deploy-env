@@ -7,7 +7,7 @@ devDependencies:
   '@types/node': 14.14.6
   jest: 26.6.3
   sucrase: 3.16.0
-  terser: 5.3.8
+  terser: 5.5.0
   typescript: 4.0.5
 lockfileVersion: 5.2
 packages:
@@ -3566,7 +3566,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-un0FmiRUQNr5PJqy9kP7c40F5BOfpGlYTrxonDChEZB7pzZxRNp/bt+ymiy9/npwXya9KH99nJ/GXFIiUkYGFQ==
-  /terser/5.3.8:
+  /terser/5.5.0:
     dependencies:
       commander: 2.20.3
       source-map: 0.7.3
@@ -3576,7 +3576,7 @@ packages:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-zVotuHoIfnYjtlurOouTazciEfL7V38QMAOhGqpXDEg6yT13cF4+fEP9b0rrCEQTn+tT46uxgFsTZzhygk+CzQ==
+      integrity: sha512-eopt1Gf7/AQyPhpygdKePTzaet31TvQxXvrf7xYUvD/d8qkCJm4SKPDzu+GHK5ZaYTn8rvttfqaZc3swK21e5g==
   /test-exclude/6.0.0:
     dependencies:
       '@istanbuljs/schema': 0.1.2
@@ -3973,5 +3973,5 @@ specifiers:
   jest: ^26.6.3
   p-limit: ^3.0.2
   sucrase: ^3.16.0
-  terser: ^5.3.8
+  terser: ^5.5.0
   typescript: ^4.0.5
