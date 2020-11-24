@@ -2,35 +2,36 @@
 > This project adheres to [SemVer](https://semver.org).
 
 ## Unreleased
-
+### Breaking
+- Update minimum supported version of Vercel CLI to v21
 
 ## 1.1.6
-## Fixes
+### Fixes
 - Preserve whitespace in environment variables
 
 ## 1.1.5
-## Fixes
+### Fixes
 - Fix `.env` fallback
 
 ## 1.1.4
-## Fixes
+### Fixes
 - Fix extra characters being added to deployed environment variables on macOS
 
 ## 1.1.3
-## Fixes
+### Fixes
 - Fix `fs` module import for compatibility with Node.js >=10
 
 ## 1.1.2
-## Improvements
+### Improvements
 - Status messages are now printed to the terminal in order of completion
 - The number of environment variables being deployed simultaneously has been capped
 
 ## 1.1.1
-# New Features
+### New Features
 - Support `.env` file
 
 ## 1.1
-# New Features
+### New Features
 - Added support for `dotenv` files 🙌
   - `.env.production`, `.env.preview`, and `.env.development` files are now supported
 
