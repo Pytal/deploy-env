@@ -1,0 +1,22 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    if: ${{ !startsWith(github.event.head_commit.message, 'v') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 15
+          registry-url: https://registry.npmjs.org
+      - name: Setup pnpm
+        run: npm add -g pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Test
+        run: pnpm test
