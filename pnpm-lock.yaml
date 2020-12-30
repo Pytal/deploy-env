@@ -4,7 +4,7 @@ dependencies:
 devDependencies:
   '@sucrase/jest-plugin': 2.0.0
   '@types/jest': 26.0.19
-  '@types/node': 14.14.16
+  '@types/node': 14.14.17
   jest: 26.6.3
   sucrase: 3.17.0
   terser: 5.5.0
@@ -578,10 +578,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ASH8OPHMNlkdjrEdmoILmzFfsJICvhBsFfAum4aKZ/9U4B6M6tTmTPh+f3ttWdD74CEGV5XvXWkbyfSdXaTd7g==
-  /@types/node/14.14.16:
+  /@types/node/14.14.17:
     dev: true
     resolution:
-      integrity: sha512-naXYePhweTi+BMv11TgioE2/FXU4fSl29HAH1ffxVciNsH3rYXjNP2yM8wqmSm7jS20gM8TIklKiTen+1iVncw==
+      integrity: sha512-G0lD1/7qD60TJ/mZmhog76k7NcpLWkPVGgzkRy3CTlnFu4LUQh5v2Wa661z6vnXmD8EQrnALUyf0VRtrACYztw==
   /@types/node/14.14.6:
     dev: true
     resolution:
@@ -3928,7 +3928,7 @@ packages:
 specifiers:
   '@sucrase/jest-plugin': ^2.0.0
   '@types/jest': ^26.0.19
-  '@types/node': ^14.14.16
+  '@types/node': ^14.14.17
   env-cmd: ^10.1.0
   jest: ^26.6.3
   p-limit: ^3.0.2
