@@ -1,13 +1,13 @@
 dependencies:
   env-cmd: 10.1.0
-  p-limit: 3.0.2
+  p-limit: 3.1.0
 devDependencies:
   '@sucrase/jest-plugin': 2.0.0
   '@types/jest': 26.0.19
   '@types/node': 14.14.19
   jest: 26.6.3
   sucrase: 3.17.0
-  terser: 5.5.0
+  terser: 5.5.1
   typescript: 4.1.3
 lockfileVersion: 5.2
 packages:
@@ -2841,14 +2841,14 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==
-  /p-limit/3.0.2:
+  /p-limit/3.1.0:
     dependencies:
-      p-try: 2.2.0
+      yocto-queue: 0.1.0
     dev: false
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-iwqZSOoWIW+Ew4kAGUlN16J4M7OB3ysMLSZtnhmqx7njIHFPlxWBX8xo3lVTyFVq6mI/lL9qt2IsN1sHwaxJkg==
+      integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==
   /p-locate/4.1.0:
     dependencies:
       p-limit: 2.3.0
@@ -2858,6 +2858,7 @@ packages:
     resolution:
       integrity: sha512-R79ZZ/0wAxKGu3oYMlz8jy/kbhsNrS7SKZ7PxEHBgJ5+F2mtFW2fK2cOtBh1cHYkQsbzFV7I+EoRKe6Yt0oK7A==
   /p-try/2.2.0:
+    dev: true
     engines:
       node: '>=6'
     resolution:
@@ -3526,7 +3527,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-un0FmiRUQNr5PJqy9kP7c40F5BOfpGlYTrxonDChEZB7pzZxRNp/bt+ymiy9/npwXya9KH99nJ/GXFIiUkYGFQ==
-  /terser/5.5.0:
+  /terser/5.5.1:
     dependencies:
       commander: 2.20.3
       source-map: 0.7.3
@@ -3536,7 +3537,7 @@ packages:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-eopt1Gf7/AQyPhpygdKePTzaet31TvQxXvrf7xYUvD/d8qkCJm4SKPDzu+GHK5ZaYTn8rvttfqaZc3swK21e5g==
+      integrity: sha512-6VGWZNVP2KTUcltUQJ25TtNjx/XgdDsBDKGt8nN0MpydU36LmbPPcMBd2kmtZNNGVVDLg44k7GKeHHj+4zPIBQ==
   /test-exclude/6.0.0:
     dependencies:
       '@istanbuljs/schema': 0.1.2
@@ -3925,13 +3926,19 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
+  /yocto-queue/0.1.0:
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
   '@sucrase/jest-plugin': ^2.0.0
   '@types/jest': ^26.0.19
   '@types/node': ^14.14.19
   env-cmd: ^10.1.0
   jest: ^26.6.3
-  p-limit: ^3.0.2
+  p-limit: ^3.1.0
   sucrase: ^3.17.0
-  terser: ^5.5.0
+  terser: ^5.5.1
   typescript: ^4.1.3
