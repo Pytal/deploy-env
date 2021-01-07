@@ -3,7 +3,7 @@ dependencies:
   p-limit: 3.1.0
 devDependencies:
   '@sucrase/jest-plugin': 2.0.0
-  '@types/jest': 26.0.19
+  '@types/jest': 26.0.20
   '@types/node': 14.14.20
   jest: 26.6.3
   sucrase: 3.17.0
@@ -490,7 +490,7 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.3
       '@types/istanbul-reports': 3.0.0
-      '@types/node': 14.14.12
+      '@types/node': 14.14.20
       '@types/yargs': 15.0.9
       chalk: 4.1.0
     dev: true
@@ -567,17 +567,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-nwKNbvnwJ2/mndE9ItP/zc2TCzw6uuodnF4EHYWD+gCQDVBuRQL5UzbZD0/ezy1iKsFU2ZQiDqg4M9dN4+wZgA==
-  /@types/jest/26.0.19:
+  /@types/jest/26.0.20:
     dependencies:
       jest-diff: 26.6.2
       pretty-format: 26.6.2
     dev: true
     resolution:
-      integrity: sha512-jqHoirTG61fee6v6rwbnEuKhpSKih0tuhqeFbCmMmErhtu3BYlOZaXWjffgOstMM4S/3iQD31lI5bGLTrs97yQ==
-  /@types/node/14.14.12:
-    dev: true
-    resolution:
-      integrity: sha512-ASH8OPHMNlkdjrEdmoILmzFfsJICvhBsFfAum4aKZ/9U4B6M6tTmTPh+f3ttWdD74CEGV5XvXWkbyfSdXaTd7g==
+      integrity: sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==
   /@types/node/14.14.20:
     dev: true
     resolution:
@@ -3934,7 +3930,7 @@ packages:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
   '@sucrase/jest-plugin': ^2.0.0
-  '@types/jest': ^26.0.19
+  '@types/jest': ^26.0.20
   '@types/node': ^14.14.20
   env-cmd: ^10.1.0
   jest: ^26.6.3
