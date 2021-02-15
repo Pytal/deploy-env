@@ -1,3 +1,4 @@
-import { formatStdout } from './format'
+import { formatStdout } from "./format";
 
-export const printStdout = (stdout: string) => console.log( formatStdout(stdout) )
+export const printStdout = (stdout: string) =>
+  console.log(formatStdout(stdout));

@@ -1,1 +1,1 @@
-export { deployEnv } from './utils/vercel-env'
+export { deployEnv } from "./utils/vercel-env";
