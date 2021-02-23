@@ -35,7 +35,7 @@
     "lib"
   ],
   "engines": {
-    "node": ">=v10.23.3"
+    "node": ">=v10.24.0"
   },
   "repository": "github:Pytal/deploy-env",
   "license": "MIT"
