@@ -3,7 +3,7 @@ dependencies:
   p-limit: 3.1.0
 devDependencies:
   '@sucrase/jest-plugin': 2.0.0
-  '@types/jest': 26.0.21
+  '@types/jest': 26.0.22
   '@types/node': 14.14.31
   jest: 26.6.3
   sucrase: 3.17.1
@@ -567,13 +567,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-nwKNbvnwJ2/mndE9ItP/zc2TCzw6uuodnF4EHYWD+gCQDVBuRQL5UzbZD0/ezy1iKsFU2ZQiDqg4M9dN4+wZgA==
-  /@types/jest/26.0.21:
+  /@types/jest/26.0.22:
     dependencies:
       jest-diff: 26.6.2
       pretty-format: 26.6.2
     dev: true
     resolution:
-      integrity: sha512-ab9TyM/69yg7eew9eOwKMUmvIZAKEGZYlq/dhe5/0IMUd/QLJv5ldRMdddSn+u22N13FP3s5jYyktxuBwY0kDA==
+      integrity: sha512-eeWwWjlqxvBxc4oQdkueW5OF/gtfSceKk4OnOAGlUSwS/liBRtZppbJuz1YkgbrbfGOoeBHun9fOvXnjNwrSOw==
   /@types/node/14.14.31:
     dev: true
     resolution:
@@ -3930,7 +3930,7 @@ packages:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
   '@sucrase/jest-plugin': ^2.0.0
-  '@types/jest': ^26.0.21
+  '@types/jest': ^26.0.22
   '@types/node': ^14.14.31
   env-cmd: ^10.1.0
   jest: ^26.6.3
