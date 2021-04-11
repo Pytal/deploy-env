@@ -7,7 +7,7 @@ specifiers:
   env-cmd: ^10.1.0
   jest: ^26.6.3
   p-limit: ^3.1.0
-  sucrase: ^3.17.1
+  sucrase: ^3.18.0
   terser: ^5.6.1
   typescript: ^4.2.4
 
@@ -20,7 +20,7 @@ devDependencies:
   '@types/jest': 26.0.22
   '@types/node': 14.14.31
   jest: 26.6.3
-  sucrase: 3.17.1
+  sucrase: 3.18.0
   terser: 5.6.1
   typescript: 4.2.4
 
@@ -3297,8 +3297,8 @@ packages:
       ts-interface-checker: 0.1.13
     dev: true
 
-  /sucrase/3.17.1:
-    resolution: {integrity: sha512-04cNLFAhS4NBG2Z/MTkLY6HdoBsqErv3wCncymFlfFtnpMthurlWYML2RlID4M2BbiJSu1eZdQnE8Lcz4PCe2g==}
+  /sucrase/3.18.0:
+    resolution: {integrity: sha512-6R3iX5pwyAFMLsM2kU4Rhc7EwODCTee8ySWM9UwqARDClO/QdQDVAWaioElx0o7u9w/76Xulz5Q1jseBp+YuRw==}
     engines: {node: '>=8'}
     hasBin: true
     dependencies:
