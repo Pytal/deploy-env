@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@sucrase/jest-plugin': ^2.0.0
+  '@sucrase/jest-plugin': ^2.1.0
   '@types/jest': ^26.0.22
   '@types/node': ^14.14.31
   env-cmd: ^10.1.0
@@ -16,7 +16,7 @@ dependencies:
   p-limit: 3.1.0
 
 devDependencies:
-  '@sucrase/jest-plugin': 2.0.0
+  '@sucrase/jest-plugin': 2.1.0
   '@types/jest': 26.0.22
   '@types/node': 14.14.31
   jest: 26.6.3
@@ -535,10 +535,10 @@ packages:
       '@sinonjs/commons': 1.8.1
     dev: true
 
-  /@sucrase/jest-plugin/2.0.0:
-    resolution: {integrity: sha512-UqmtOnj2OliwV1qKFCQsci41vPX665wGvf5YosRjL+l6jF69HrgB3T8gGnCcF4tAmRycYw8t59x+Dgz64szXWA==}
+  /@sucrase/jest-plugin/2.1.0:
+    resolution: {integrity: sha512-dWxoZYS//2deHTyVdiHUoZSW9BxtM+mp5vqkW2gUHe2rdCgdzFutmqb/W9Q0OzlIZEpegzVxKz2xEfQNVoINYw==}
     dependencies:
-      sucrase: 3.15.0
+      sucrase: 3.18.0
     dev: true
 
   /@types/babel__core/7.1.12:
@@ -3282,19 +3282,6 @@ packages:
   /strip-final-newline/2.0.0:
     resolution: {integrity: sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==}
     engines: {node: '>=6'}
-    dev: true
-
-  /sucrase/3.15.0:
-    resolution: {integrity: sha512-05TJOUfMgckH7wKqfk/1p4G6q16nIeW/GHQwD44vkT0mQMqqzgfHCwkX3whNmwyOo7nVF0jDLwVu/qOBTtsscw==}
-    engines: {node: '>=8'}
-    hasBin: true
-    dependencies:
-      commander: 4.1.1
-      glob: 7.1.6
-      lines-and-columns: 1.1.6
-      mz: 2.7.0
-      pirates: 4.0.1
-      ts-interface-checker: 0.1.13
     dev: true
 
   /sucrase/3.18.0:
