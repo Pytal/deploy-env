@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@sucrase/jest-plugin': ^2.1.0
-  '@types/jest': ^26.0.23
+  '@types/jest': ^26.0.24
   '@types/node': ^14.14.31
   env-cmd: ^10.1.0
   jest: ^26.6.3
@@ -17,7 +17,7 @@ dependencies:
 
 devDependencies:
   '@sucrase/jest-plugin': 2.1.0
-  '@types/jest': 26.0.23
+  '@types/jest': 26.0.24
   '@types/node': 14.14.31
   jest: 26.6.3
   sucrase: 3.20.0
@@ -592,8 +592,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/26.0.23:
-    resolution: {integrity: sha512-ZHLmWMJ9jJ9PTiT58juykZpL7KjwJywFN3Rr2pTSkyQfydf/rk22yS7W8p5DaVUMQ2BQC7oYiU3FjbTM/mYrOA==}
+  /@types/jest/26.0.24:
+    resolution: {integrity: sha512-E/X5Vib8BWqZNRlDxj9vYXhsDwPYbPINqKF9BsnSoon4RQ0D9moEuLD8txgyypFLH7J4+Lho9Nr/c8H0Fi+17w==}
     dependencies:
       jest-diff: 26.6.2
       pretty-format: 26.6.2
