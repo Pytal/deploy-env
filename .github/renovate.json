@@ -5,13 +5,14 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
       "depTypeList": ["peerDependencies"],
       "rangeStrategy": "replace"
     }
   ],
   "prCreation": "not-pending",
-  "labels": ["dependencies"],
-  "minor": {
-    "automerge": true
-  }
+  "labels": ["dependencies"]
 }
