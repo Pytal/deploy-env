@@ -8,7 +8,7 @@ specifiers:
   jest: ^26.6.3
   p-limit: ^3.1.0
   sucrase: ^3.20.0
-  terser: ^5.7.0
+  terser: ^5.7.1
   typescript: ^4.3.2
 
 dependencies:
@@ -21,7 +21,7 @@ devDependencies:
   '@types/node': 14.14.31
   jest: 26.6.3
   sucrase: 3.20.0
-  terser: 5.7.0
+  terser: 5.7.1
   typescript: 4.3.2
 
 packages:
@@ -3344,8 +3344,8 @@ packages:
       supports-hyperlinks: 2.1.0
     dev: true
 
-  /terser/5.7.0:
-    resolution: {integrity: sha512-HP5/9hp2UaZt5fYkuhNBR8YyRcT8juw8+uFbAme53iN9hblvKnLUTKkmwJG6ocWpIKf8UK4DoeWG4ty0J6S6/g==}
+  /terser/5.7.1:
+    resolution: {integrity: sha512-b3e+d5JbHAe/JSjwsC3Zn55wsBIM7AsHLjKxT31kGCldgbpFePaFo+PiddtO6uwRZWRw7sPXmAN8dTW61xmnSg==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
