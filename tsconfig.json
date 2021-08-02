@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2018",  // Node.js v10
-    "lib": ["es2018"],   // https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
+    "target": "es2019",  // Node.js v12 config based on community repo https://github.com/tsconfig/bases#node-12-tsconfigjson
+    "lib": ["es2019", "es2020.promise", "es2020.bigint", "es2020.string"],   // Official target mapping https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
     "module": "commonjs",
     "outDir": "lib",
     "declaration": true,
