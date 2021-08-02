@@ -6,8 +6,8 @@
   "main": "./lib/mod.js",
   "exports": "./lib/mod.js",
   "bin": {
-    "dpl-env": "lib/cli.js",
-    "deploy-env": "lib/cli.js"
+    "dpl-env": "./lib/cli.js",
+    "deploy-env": "./lib/cli.js"
   },
   "scripts": {
     "test": "jest --silent",
