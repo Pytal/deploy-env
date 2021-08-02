@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "jest --silent",
-    "prepublishOnly": "pnpm run build",
+    "prepublishOnly": "pnpm build",
     "build": "rm -rf lib && tsc && pnpm shebang && pnpm terse",
     "shebang": "node scripts/shebang.mjs lib/cli.js",
     "terse": "sucrase-node scripts/terse.ts lib/"
