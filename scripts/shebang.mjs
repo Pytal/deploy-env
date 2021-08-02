@@ -1,7 +1,7 @@
 import * as fs from 'node:fs/promises'
 
-const [,,filepath] = process.argv
+const [,,filePath] = process.argv
 const shebang = '#!/usr/bin/env node\n'
-const contents = await fs.readFile(filepath, 'utf-8')
+const contents = await fs.readFile(filePath, 'utf-8')
 
-await fs.writeFile(filepath, shebang + contents)
+await fs.writeFile(filePath, shebang + contents)
