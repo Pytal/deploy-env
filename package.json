@@ -10,8 +10,7 @@
   "scripts": {
     "test": "jest --silent",
     "prepublishOnly": "pnpm run build",
-    "build": "rm -rf lib && tsc",
-    "postbuild": "pnpm run shebang && pnpm run terse",
+    "build": "rm -rf lib && tsc && pnpm shebang && pnpm terse",
     "shebang": "node scripts/shebang.mjs lib/cli.js",
     "terse": "sucrase-node scripts/terse.ts lib/"
   },
