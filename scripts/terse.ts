@@ -23,5 +23,5 @@ const terse = async (path: string) => {
 }
 
 // CLI
-const [,,path] = process.argv
+const [, , path] = process.argv
 terse(path)
