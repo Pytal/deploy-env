@@ -10,11 +10,11 @@
     "deploy-env": "./lib/cli.js"
   },
   "scripts": {
-    "test": "jest --silent",
-    "prepublishOnly": "pnpm build",
     "build": "rm -rf lib && tsc && pnpm shebang && pnpm terse",
+    "prepublishOnly": "pnpm build",
     "shebang": "node scripts/shebang.mjs lib/cli.js",
-    "terse": "sucrase-node scripts/terse.ts lib/"
+    "terse": "sucrase-node scripts/terse.ts lib/",
+    "test": "jest --silent"
   },
   "dependencies": {
     "env-cmd": "^10.1.0",
