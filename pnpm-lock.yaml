@@ -4,7 +4,7 @@ specifiers:
   '@types/jest': ^26.0.24
   '@types/node': ^16.4.10
   env-cmd: ^10.1.0
-  esbuild: ^0.12.17
+  esbuild: ^0.12.18
   esbuild-jest: ^0.5.0
   jest: ^27.0.6
   p-limit: ^3.1.0
@@ -20,8 +20,8 @@ dependencies:
 devDependencies:
   '@types/jest': 26.0.24
   '@types/node': 16.4.10
-  esbuild: 0.12.17
-  esbuild-jest: 0.5.0_esbuild@0.12.17
+  esbuild: 0.12.18
+  esbuild-jest: 0.5.0_esbuild@0.12.18
   jest: 27.0.6
   prettier: 2.3.2
   sucrase: 3.20.0
@@ -1414,7 +1414,7 @@ packages:
       cross-spawn: 7.0.3
     dev: false
 
-  /esbuild-jest/0.5.0_esbuild@0.12.17:
+  /esbuild-jest/0.5.0_esbuild@0.12.18:
     resolution: {integrity: sha512-AMZZCdEpXfNVOIDvURlqYyHwC8qC1/BFjgsrOiSL1eyiIArVtHL8YAC83Shhn16cYYoAWEW17yZn0W/RJKJKHQ==}
     peerDependencies:
       esbuild: '>=0.8.50'
@@ -1422,13 +1422,13 @@ packages:
       '@babel/core': 7.14.8
       '@babel/plugin-transform-modules-commonjs': 7.14.5_@babel+core@7.14.8
       babel-jest: 26.6.3_@babel+core@7.14.8
-      esbuild: 0.12.17
+      esbuild: 0.12.18
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /esbuild/0.12.17:
-    resolution: {integrity: sha512-GshKJyVYUnlSXIZj/NheC2O0Kblh42CS7P1wJyTbbIHevTG4jYMS9NNw8EOd8dDWD0dzydYHS01MpZoUcQXB4g==}
+  /esbuild/0.12.18:
+    resolution: {integrity: sha512-arWhBQSy+oiBAp8VRRCFvAU+3jyf0gGacABLO3haMHboXCDjzq4WUqyQklst2XRuFS8MXgap+9uvODqj9Iygpg==}
     hasBin: true
     requiresBuild: true
     dev: true
