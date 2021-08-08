@@ -1,4 +1,4 @@
-name: Publish
+name: Release
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  publish:
+  release:
     if: startsWith(github.event.head_commit.message, 'v')
 
     runs-on: ubuntu-latest
@@ -22,6 +22,10 @@ jobs:
         run: npm add -g pnpm@6
       - name: Install dependencies
         run: pnpm install
+      - name: Check formatting
+        run: pnpm prettier:check-all
+      - name: Lint
+        run: pnpm eslint:lint-all
       - name: Test
         run: pnpm test
       - name: Publish
@@ -29,10 +33,9 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Create Release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+        uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ github.event.head_commit.message }}
-          release_name: ${{ github.event.head_commit.message }}
           draft: true
+          name: ${{ github.event.head_commit.message }}
+          tag_name: ${{ github.event.head_commit.message }}
+          token: ${{ github.token }}
