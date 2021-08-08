@@ -6,12 +6,13 @@ export const parseArgv = (argv: typeof process.argv) => {
     argv[2] === 'preview' ||
     argv[2] === 'development'
   ) {
-    const [deploymentEnv,...varNameArr]: Argv = [argv[2],...argv.slice(3)]
+    const [deploymentEnv, ...varNameArr]: Argv = [argv[2], ...argv.slice(3)]
 
     return { deploymentEnv, varNameArr: varNameArr.length ? varNameArr : null }
-  }
-  else {
-    console.log( 'Usage: deploy-env [production | preview | development] [ENV_VAR]...' )
+  } else {
+    console.log(
+      'Usage: deploy-env [production | preview | development] [ENV_VAR]...',
+    )
     process.exit(9)
   }
 }
