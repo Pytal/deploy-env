@@ -15,6 +15,8 @@
     "eslint:fix": "eslint --fix src/",
     "eslint:lint-extra": "eslint ./ --ignore-pattern 'src/'",
     "eslint:fix-extra": "eslint --fix ./ --ignore-pattern 'src/'",
+    "eslint:lint-all": "pnpm eslint:lint && pnpm eslint:lint-extra",
+    "eslint:fix-all": "pnpm eslint:fix && pnpm eslint:fix-extra",
     "prepublishOnly": "pnpm build",
     "prettier:check": "prettier --check src/",
     "prettier:write": "prettier --write src/",
