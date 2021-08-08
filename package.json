@@ -14,8 +14,8 @@
     "prepublishOnly": "pnpm build",
     "prettier:check": "prettier --check src/",
     "prettier:write": "prettier --write src/",
-    "prettier:check-extra": "prettier --check ./ '!src'",
-    "prettier:write-extra": "prettier --write ./ '!src'",
+    "prettier:check-extra": "prettier --check ./ '!{src/,pnpm-lock.yaml}'",
+    "prettier:write-extra": "prettier --write ./ '!{src/,pnpm-lock.yaml}'",
     "shebang": "node scripts/shebang.mjs lib/cli.js",
     "terse": "sucrase-node scripts/terse.ts lib/",
     "test": "jest --silent"
