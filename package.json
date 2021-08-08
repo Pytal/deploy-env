@@ -11,6 +11,10 @@
   },
   "scripts": {
     "build": "rm -rf lib && tsc && pnpm shebang && pnpm terse",
+    "eslint:lint": "eslint src/",
+    "eslint:fix": "eslint --fix src/",
+    "eslint:lint-extra": "eslint ./ --ignore-pattern 'src/'",
+    "eslint:fix-extra": "eslint --fix ./ --ignore-pattern 'src/'",
     "prepublishOnly": "pnpm build",
     "prettier:check": "prettier --check src/",
     "prettier:write": "prettier --write src/",
