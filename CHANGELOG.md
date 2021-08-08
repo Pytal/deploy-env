@@ -4,6 +4,13 @@
 
 ## Unreleased
 
+## 3.0.0
+
+### Breaking
+
+- Drop support for Node.js v10
+- Update minimum supported version of Vercel CLI to v23
+
 ## 2.0.1
 
 ### Fixes
