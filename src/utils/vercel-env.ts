@@ -8,7 +8,7 @@ const removeEnv = async (deploymentEnv: DeploymentEnv, envMap: EnvMap) => {
 
   for (const varName in envMap) {
     stdoutArr.push(
-      limit(() => exec( `vercel env rm ${varName} ${deploymentEnv} -y` ).then(printStdout))
+      limit(() => exec(`vercel env rm ${varName} ${deploymentEnv} -y`).then(printStdout))
     )
   }
 
@@ -16,15 +16,13 @@ const removeEnv = async (deploymentEnv: DeploymentEnv, envMap: EnvMap) => {
 }
 
 const addEnv = async (deploymentEnv: DeploymentEnv, envMap: EnvMap) => {
-  // new syntax: https://github.com/vercel/vercel/pull/5413 released in v21 https://github.com/vercel/vercel/releases/tag/vercel%4021.0.0
-  // ref: https://github.com/vercel/vercel/blob/vercel%4021.0.0/packages/now-cli/src/types.ts#L206
-  const varType = 'plain'
+  // new syntax: https://github.com/vercel/vercel/pull/6049 released in v22 https://github.com/vercel/vercel/releases/tag/vercel%4022.0.0
   const stdoutArr: Promise<void>[] = []
 
   for (const varName in envMap) {
     const varValue = envMap[varName]
     stdoutArr.push(
-      limit(() => exec( `printf %s "${varValue}" | vercel env add ${varType} ${varName} ${deploymentEnv}` ).then(printStdout))
+      limit(() => exec(`printf %s "${varValue}" | vercel env add ${varName} ${deploymentEnv}`).then(printStdout)),
     )
   }
 
