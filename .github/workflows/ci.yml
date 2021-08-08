@@ -1,22 +1,29 @@
-name: Test
+name: CI
 
 on:
   push:
   pull_request:
 
 jobs:
-  test:
+  ci:
     if: ${{ !startsWith(github.event.head_commit.message, 'v') }}
+
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 15
+          node-version: 16
+          cache: pnpm
           registry-url: https://registry.npmjs.org
       - name: Setup pnpm
-        run: npm add -g pnpm
+        run: npm add -g pnpm@6
       - name: Install dependencies
         run: pnpm install
+      - name: Check formatting
+        run: pnpm prettier:check-all
+      - name: Lint
+        run: pnpm eslint:lint-all
       - name: Test
         run: pnpm test
