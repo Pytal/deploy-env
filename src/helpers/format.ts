@@ -1,4 +1,4 @@
-export const formatStdout = (stdout: string) =>
+export const formatStdout = (stdout: string): string =>
   stdout
     .replace(/.*\n/, '')
     .replace(/- Removing|- Saving|- Retrieving project…/, '')

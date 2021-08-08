@@ -1,11 +1,11 @@
 import { exists } from '../helpers/helpers'
 import { GetEnvVars } from 'env-cmd'
-import type { DeploymentEnv, EnvMap } from '../types/types'
+import type { DeploymentEnv, EnvMap } from '../types/shared'
 
 export const getEnvMap = async (
   deploymentEnv: DeploymentEnv,
   varNameArr?: string[],
-) => {
+): Promise<EnvMap> => {
   let envMap: EnvMap
 
   if (await exists(`.env.${deploymentEnv}`)) {

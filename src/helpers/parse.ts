@@ -1,12 +1,20 @@
-import type { Argv } from '../types/types'
+import type { DeploymentEnv } from '../types/shared'
 
-export const parseArgv = (argv: typeof process.argv) => {
+export const parseArgv = (
+  argv: typeof process.argv,
+): {
+  deploymentEnv: DeploymentEnv
+  varNameArr: string[] | null
+} => {
   if (
     argv[2] === 'production' ||
     argv[2] === 'preview' ||
     argv[2] === 'development'
   ) {
-    const [deploymentEnv, ...varNameArr]: Argv = [argv[2], ...argv.slice(3)]
+    const [deploymentEnv, ...varNameArr]: [DeploymentEnv, ...string[]] = [
+      argv[2],
+      ...argv.slice(3),
+    ]
 
     return { deploymentEnv, varNameArr: varNameArr.length ? varNameArr : null }
   } else {

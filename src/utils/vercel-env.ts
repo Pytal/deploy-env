@@ -1,7 +1,7 @@
 import { exec, limit } from '../helpers/helpers'
 import { printStdout } from '../helpers/print'
 import { getEnvMap } from './get-env'
-import type { DeploymentEnv, EnvMap } from '../types/types'
+import type { DeploymentEnv, EnvMap } from '../types/shared'
 
 const removeEnv = async (deploymentEnv: DeploymentEnv, envMap: EnvMap) => {
   const stdoutArr: Promise<void>[] = []
@@ -38,7 +38,7 @@ const addEnv = async (deploymentEnv: DeploymentEnv, envMap: EnvMap) => {
 export const deployEnv = async (
   deploymentEnv: DeploymentEnv,
   varNameArr?: string[],
-) => {
+): Promise<void> => {
   const envMap = await getEnvMap(deploymentEnv, varNameArr)
 
   await removeEnv(deploymentEnv, envMap)
