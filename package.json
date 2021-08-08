@@ -20,6 +20,8 @@
     "prettier:write": "prettier --write src/",
     "prettier:check-extra": "prettier --check ./ '!{src/,pnpm-lock.yaml}'",
     "prettier:write-extra": "prettier --write ./ '!{src/,pnpm-lock.yaml}'",
+    "prettier:check-all": "pnpm prettier:check && pnpm prettier:check-extra",
+    "prettier:write-all": "pnpm prettier:write && pnpm prettier:write-extra",
     "shebang": "node scripts/shebang.mjs lib/cli.js",
     "terse": "sucrase-node scripts/terse.ts lib/",
     "test": "jest --silent"
