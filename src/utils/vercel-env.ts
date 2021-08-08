@@ -8,7 +8,9 @@ const removeEnv = async (deploymentEnv: DeploymentEnv, envMap: EnvMap) => {
 
   for (const varName in envMap) {
     stdoutArr.push(
-      limit(() => exec(`vercel env rm ${varName} ${deploymentEnv} -y`).then(printStdout))
+      limit(() =>
+        exec(`vercel env rm ${varName} ${deploymentEnv} -y`).then(printStdout),
+      ),
     )
   }
 
@@ -22,14 +24,21 @@ const addEnv = async (deploymentEnv: DeploymentEnv, envMap: EnvMap) => {
   for (const varName in envMap) {
     const varValue = envMap[varName]
     stdoutArr.push(
-      limit(() => exec(`printf %s "${varValue}" | vercel env add ${varName} ${deploymentEnv}`).then(printStdout)),
+      limit(() =>
+        exec(
+          `printf %s "${varValue}" | vercel env add ${varName} ${deploymentEnv}`,
+        ).then(printStdout),
+      ),
     )
   }
 
   await Promise.all(stdoutArr)
 }
 
-export const deployEnv = async (deploymentEnv: DeploymentEnv, varNameArr?: string[]) => {
+export const deployEnv = async (
+  deploymentEnv: DeploymentEnv,
+  varNameArr?: string[],
+) => {
   const envMap = await getEnvMap(deploymentEnv, varNameArr)
 
   await removeEnv(deploymentEnv, envMap)
