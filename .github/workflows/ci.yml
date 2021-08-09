@@ -7,7 +7,6 @@ on:
 jobs:
   ci:
     if: ${{ !startsWith(github.event.head_commit.message, 'v') }}
-
     runs-on: ubuntu-latest
 
     steps:

@@ -8,8 +8,8 @@ on:
 jobs:
   release:
     if: startsWith(github.event.head_commit.message, 'v')
-
     runs-on: ubuntu-latest
+    environment: release
 
     steps:
       - uses: actions/checkout@v2
