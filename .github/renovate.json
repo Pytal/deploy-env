@@ -7,7 +7,7 @@
       "automerge": true
     },
     {
-      "depTypeList": ["peerDependencies"],
+      "matchDepTypes": ["peerDependencies"],
       "rangeStrategy": "replace"
     }
   ],
