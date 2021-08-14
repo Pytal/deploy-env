@@ -1,4 +1,4 @@
-import * as fs from 'node:fs/promises'
+import { promises as fs } from 'node:fs'
 import { extname } from 'node:path'
 import { minify } from 'terser'
 
