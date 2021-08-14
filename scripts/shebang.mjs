@@ -1,4 +1,4 @@
-import { promises as fs } from 'node:fs'
+import * as fs from 'node:fs/promises'
 
 const [, , filePath] = process.argv
 const shebang = '#!/usr/bin/env node\n'
