@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs'
 import { exec as execCallback } from 'child_process'
-import pLimit = require('p-limit')
+import pLimit from 'p-limit'
 const { access } = fs
 
 export const exists = (path: string): Promise<boolean> =>
