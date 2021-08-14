@@ -28,3 +28,5 @@ jobs:
         run: pnpm eslint:lint-all
       - name: Test
         run: pnpm test
+      - name: Build
+        run: pnpm build
