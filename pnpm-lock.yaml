@@ -6,7 +6,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^4.29.3
   '@typescript-eslint/parser': ^4.29.3
   env-cmd: ^10.1.0
-  esbuild: ^0.12.23
+  esbuild: ^0.12.24
   esbuild-jest: ^0.5.0
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
@@ -26,8 +26,8 @@ devDependencies:
   '@types/node': 12.20.21
   '@typescript-eslint/eslint-plugin': 4.29.3_5b13bab190e8051f191796d8c4619073
   '@typescript-eslint/parser': 4.29.3_eslint@7.32.0+typescript@4.4.2
-  esbuild: 0.12.23
-  esbuild-jest: 0.5.0_esbuild@0.12.23
+  esbuild: 0.12.24
+  esbuild-jest: 0.5.0_esbuild@0.12.24
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   jest: 27.1.0
@@ -1650,7 +1650,7 @@ packages:
       cross-spawn: 7.0.3
     dev: false
 
-  /esbuild-jest/0.5.0_esbuild@0.12.23:
+  /esbuild-jest/0.5.0_esbuild@0.12.24:
     resolution: {integrity: sha512-AMZZCdEpXfNVOIDvURlqYyHwC8qC1/BFjgsrOiSL1eyiIArVtHL8YAC83Shhn16cYYoAWEW17yZn0W/RJKJKHQ==}
     peerDependencies:
       esbuild: '>=0.8.50'
@@ -1658,13 +1658,13 @@ packages:
       '@babel/core': 7.15.0
       '@babel/plugin-transform-modules-commonjs': 7.15.0_@babel+core@7.15.0
       babel-jest: 26.6.3_@babel+core@7.15.0
-      esbuild: 0.12.23
+      esbuild: 0.12.24
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /esbuild/0.12.23:
-    resolution: {integrity: sha512-qvS4aKnmKikoWGscd5lVAzgobMovlH/JhaWitRiQ8xJx0x1Fym0pqVjMFs43Nvff8WpibeWm+fWoLK88T1U0Xw==}
+  /esbuild/0.12.24:
+    resolution: {integrity: sha512-C0ibY+HsXzYB6L/pLWEiWjMpghKsIc58Q5yumARwBQsHl9DXPakW+5NI/Y9w4YXiz0PEP6XTGTT/OV4Nnsmb4A==}
     hasBin: true
     requiresBuild: true
     dev: true
