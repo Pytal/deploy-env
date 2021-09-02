@@ -37,7 +37,7 @@
     "@types/node": "^12.20.23",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
-    "esbuild": "^0.12.24",
+    "esbuild": "^0.12.25",
     "esbuild-jest": "^0.5.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
