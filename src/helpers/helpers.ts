@@ -2,6 +2,14 @@ import { promises as fs } from 'fs'
 import { exec as execCallback } from 'child_process'
 import pLimit from 'p-limit'
 const { access } = fs
+import { pRateLimit } from 'p-ratelimit'
+
+// limit to 100 requests per minute (actual limit is 120 per minute)
+export const limit = pRateLimit({
+  interval: 1000 * 60,
+  rate: 100,
+  concurrency: 4,
+})
 
 export const exists = (path: string): Promise<boolean> =>
   access(path)
@@ -12,5 +20,3 @@ export const exec = (cmd: string): Promise<string> =>
   new Promise((res, _rej) =>
     execCallback(cmd, (_, stdout, stderr) => res(stdout + stderr)),
   )
-
-export const limit = pLimit(8)
