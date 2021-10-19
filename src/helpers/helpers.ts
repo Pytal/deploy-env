@@ -1,6 +1,5 @@
 import { promises as fs } from 'fs'
 import { exec as execCallback } from 'child_process'
-import pLimit from 'p-limit'
 const { access } = fs
 import { pRateLimit } from 'p-ratelimit'
 
