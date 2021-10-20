@@ -3,11 +3,10 @@ import { exec as execCallback } from 'child_process'
 const { access } = fs
 import { pRateLimit } from 'p-ratelimit'
 
-// limit to 100 requests per minute (actual limit is 120 per minute)
 export const limit = pRateLimit({
-  interval: 1000 * 60,
-  rate: 100,
-  concurrency: 4,
+  interval: 1000 * 10,
+  rate: 9,
+  concurrency: 3,
 })
 
 export const exists = (path: string): Promise<boolean> =>
