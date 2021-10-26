@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
-    "@types/node": "^12.20.36",
+    "@types/node": "^16.11.6",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "esbuild": "^0.13.9",
@@ -54,7 +54,7 @@
     "lib"
   ],
   "engines": {
-    "node": ">=v12.22.7",
+    "node": ">=v16.13.0",
     "pnpm": ">=6.19.1"
   },
   "repository": "github:Pytal/deploy-env",
