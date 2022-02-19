@@ -9,7 +9,7 @@ specifiers:
   esbuild: ^0.14.3
   esbuild-jest: ^0.5.0
   eslint: ^8.9.0
-  eslint-config-prettier: ^8.3.0
+  eslint-config-prettier: ^8.4.0
   jest: ^27.5.1
   p-limit: ^4.0.0
   prettier: ^2.5.1
@@ -29,7 +29,7 @@ devDependencies:
   esbuild: 0.14.3
   esbuild-jest: 0.5.0_esbuild@0.14.3
   eslint: 8.9.0
-  eslint-config-prettier: 8.3.0_eslint@8.9.0
+  eslint-config-prettier: 8.4.0_eslint@8.9.0
   jest: 27.5.1
   prettier: 2.5.1
   sucrase: 3.20.3
@@ -1860,8 +1860,8 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-config-prettier/8.3.0_eslint@8.9.0:
-    resolution: {integrity: sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==}
+  /eslint-config-prettier/8.4.0_eslint@8.9.0:
+    resolution: {integrity: sha512-CFotdUcMY18nGRo5KGsnNxpznzhkopOcOo0InID+sgQssPrzjvsyKZPvOgymTFeHrFuC3Tzdf2YndhXtULK9Iw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
