@@ -55,7 +55,7 @@
   ],
   "engines": {
     "node": ">=v12.22.10",
-    "pnpm": ">=6.31.0"
+    "pnpm": ">=6.32.0"
   },
   "repository": "github:Pytal/deploy-env",
   "license": "MIT"
