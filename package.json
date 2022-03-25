@@ -42,7 +42,7 @@
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
     "jest": "^27.5.1",
-    "prettier": "^2.6.0",
+    "prettier": "^2.6.1",
     "sucrase": "^3.20.3",
     "terser": "^5.12.1",
     "typescript": "^4.6.3"
