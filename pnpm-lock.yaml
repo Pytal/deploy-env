@@ -12,7 +12,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   jest: ^27.5.1
   p-limit: ^4.0.0
-  prettier: ^2.6.1
+  prettier: ^2.6.2
   sucrase: ^3.20.3
   terser: ^5.12.1
   typescript: ^4.6.3
@@ -31,7 +31,7 @@ devDependencies:
   eslint: 8.12.0
   eslint-config-prettier: 8.5.0_eslint@8.12.0
   jest: 27.5.1
-  prettier: 2.6.1
+  prettier: 2.6.2
   sucrase: 3.20.3
   terser: 5.12.1
   typescript: 4.6.3
@@ -3701,8 +3701,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.6.1:
-    resolution: {integrity: sha512-8UVbTBYGwN37Bs9LERmxCPjdvPxlEowx2urIL6urHzdb3SDq4B/Z6xLFCblrSnE4iKWcS6ziJ3aOYrc1kz/E2A==}
+  /prettier/2.6.2:
+    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
