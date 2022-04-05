@@ -54,7 +54,7 @@
     "lib"
   ],
   "engines": {
-    "node": ">=v12.22.11",
+    "node": ">=v12.22.12",
     "pnpm": ">=6.32.4"
   },
   "repository": "github:Pytal/deploy-env",
