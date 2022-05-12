@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/jest': ^27.5.1
-  '@types/node': ^12.20.51
+  '@types/node': ^12.20.52
   '@typescript-eslint/eslint-plugin': ^5.23.0
   '@typescript-eslint/parser': ^5.23.0
   env-cmd: ^10.1.0
@@ -23,7 +23,7 @@ dependencies:
 
 devDependencies:
   '@types/jest': 27.5.1
-  '@types/node': 12.20.51
+  '@types/node': 12.20.52
   '@typescript-eslint/eslint-plugin': 5.23.0_c63nfttrfhylg3zmgcxfslaw44
   '@typescript-eslint/parser': 5.23.0_hcfsmds2fshutdssjqluwm76uu
   esbuild: 0.14.3
@@ -778,8 +778,8 @@ packages:
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==}
     dev: true
 
-  /@types/node/12.20.51:
-    resolution: {integrity: sha512-anVDMfReTatfH8GVmHmaTZOL0jeTLNZ9wK9SSrQS3tMmn4vUc+9fVWlUzAieuQefWDyWUz4Z3aqXxDgO1VsYjg==}
+  /@types/node/12.20.52:
+    resolution: {integrity: sha512-cfkwWw72849SNYp3Zx0IcIs25vABmFh73xicxhCkTcvtZQeIez15PpwQN8fY3RD7gv1Wrxlc9MEtfMORZDEsGw==}
     dev: true
 
   /@types/node/16.4.13:
