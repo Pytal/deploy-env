@@ -13,7 +13,7 @@ specifiers:
   jest: ^27.5.1
   p-limit: ^4.0.0
   prettier: ^2.7.1
-  sucrase: ^3.25.0
+  sucrase: ^3.26.0
   terser: ^5.15.0
   typescript: ^4.8.3
 
@@ -32,7 +32,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.23.1
   jest: 27.5.1
   prettier: 2.7.1
-  sucrase: 3.25.0
+  sucrase: 3.26.0
   terser: 5.15.0
   typescript: 4.8.3
 
@@ -4180,8 +4180,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /sucrase/3.25.0:
-    resolution: {integrity: sha512-WxTtwEYXSmZArPGStGBicyRsg5TBEFhT5b7N+tF+zauImP0Acy+CoUK0/byJ8JNPK/5lbpWIVuFagI4+0l85QQ==}
+  /sucrase/3.26.0:
+    resolution: {integrity: sha512-iWWppLcRrEwHaHefYJaJP9XQdRJO+tZfy/kDZizar5Ur1IK8XN48nwMFnDupXw2uvNtjWd8I58vVH42inBT/2Q==}
     engines: {node: '>=8'}
     hasBin: true
     dependencies:
