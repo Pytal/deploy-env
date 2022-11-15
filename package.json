@@ -45,7 +45,7 @@
     "prettier": "^2.7.1",
     "sucrase": "^3.28.0",
     "terser": "^5.15.1",
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.3"
   },
   "peerDependencies": {
     "vercel": "^23.0.0"
