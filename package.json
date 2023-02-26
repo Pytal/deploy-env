@@ -39,7 +39,7 @@
     "@typescript-eslint/parser": "^5.53.0",
     "esbuild": "^0.14.3",
     "esbuild-jest": "^0.5.0",
-    "eslint": "^8.34.0",
+    "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.6.0",
     "jest": "^27.5.1",
     "prettier": "^2.8.4",
