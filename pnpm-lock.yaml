@@ -14,7 +14,7 @@ specifiers:
   p-limit: ^4.0.0
   prettier: ^2.8.8
   sucrase: ^3.32.0
-  terser: ^5.16.8
+  terser: ^5.17.1
   typescript: ^4.9.5
 
 dependencies:
@@ -33,7 +33,7 @@ devDependencies:
   jest: 27.5.1
   prettier: 2.8.8
   sucrase: 3.32.0
-  terser: 5.16.8
+  terser: 5.17.1
   typescript: 4.9.5
 
 packages:
@@ -703,15 +703,6 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@jridgewell/gen-mapping/0.3.1:
-    resolution: {integrity: sha512-GcHwniMlA2z+WFPWuY8lp3fsza0I8xPFMWL5+n8LYyP6PSvPrXf4+n8stDHZY2DM0zy9sVkRDy1jDI4XGzYVqg==}
-    engines: {node: '>=6.0.0'}
-    dependencies:
-      '@jridgewell/set-array': 1.1.1
-      '@jridgewell/sourcemap-codec': 1.4.13
-      '@jridgewell/trace-mapping': 0.3.13
-    dev: true
-
   /@jridgewell/gen-mapping/0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
     engines: {node: '>=6.0.0'}
@@ -734,7 +725,7 @@ packages:
   /@jridgewell/source-map/0.3.2:
     resolution: {integrity: sha512-m7O9o2uR8k2ObDysZYzdfhb08VuEml5oWGiosa1VdaPZ/A6QyPkAJuwN0Q1lhULOf6B7MtQmHENS743hWtCrgw==}
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.1
+      '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.13
     dev: true
 
@@ -4258,8 +4249,8 @@ packages:
       supports-hyperlinks: 2.2.0
     dev: true
 
-  /terser/5.16.8:
-    resolution: {integrity: sha512-QI5g1E/ef7d+PsDifb+a6nnVgC4F22Bg6T0xrBrz6iloVB4PUkkunp6V8nzoOOZJIzjWVdAGqCdlKlhLq/TbIA==}
+  /terser/5.17.1:
+    resolution: {integrity: sha512-hVl35zClmpisy6oaoKALOpS0rDYLxRFLHhRuDlEGTKey9qHjS1w9GMORjuwIMt70Wan4lwsLYyWDVnWgF+KUEw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
