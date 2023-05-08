@@ -14,7 +14,7 @@ specifiers:
   p-limit: ^4.0.0
   prettier: ^2.8.8
   sucrase: ^3.32.0
-  terser: ^5.17.1
+  terser: ^5.17.2
   typescript: ^4.9.5
 
 dependencies:
@@ -33,7 +33,7 @@ devDependencies:
   jest: 27.5.1
   prettier: 2.8.8
   sucrase: 3.32.0
-  terser: 5.17.1
+  terser: 5.17.2
   typescript: 4.9.5
 
 packages:
@@ -4249,8 +4249,8 @@ packages:
       supports-hyperlinks: 2.2.0
     dev: true
 
-  /terser/5.17.1:
-    resolution: {integrity: sha512-hVl35zClmpisy6oaoKALOpS0rDYLxRFLHhRuDlEGTKey9qHjS1w9GMORjuwIMt70Wan4lwsLYyWDVnWgF+KUEw==}
+  /terser/5.17.2:
+    resolution: {integrity: sha512-1D1aGbOF1Mnayq5PvfMc0amAR1y5Z1nrZaGCvI5xsdEfZEVte8okonk02OiaK5fw5hG1GWuuVsakOnpZW8y25A==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
